@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 var userRouter = require("./routes/userRoute");
 var app = express();
 const cors = require("cors");
-app.use(cors({ origin: "https://client-olive-mu.vercel.app/", credentials: true }));
+app.use(cors());
 dotenv.config({ path: "./.env" });
 
 require("./models/database").dbConnection();
