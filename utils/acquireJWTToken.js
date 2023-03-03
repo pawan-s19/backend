@@ -6,7 +6,7 @@ const sendToken = (user, statusCode, res) => {
   const options = {
     expires: new Date(Date.now() + 1 * 60 * 24 * 24 * 1000),
     httpOnly: false,
-    sameSite:"none",
+    samesite:"none",
     secure:"true"
   };
 
